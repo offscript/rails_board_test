@@ -11,7 +11,7 @@ export class JobService {
 
 	constructor (private http: Http) {}
 
-	private jobsUrl = 'http://localhost:3000/posts';
+	private jobsUrl = 'https://salty-tundra-58302.herokuapp.com/posts';
 
 	//index Jobs
 	getJobs() : Observable<Job[]> {
