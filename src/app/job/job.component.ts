@@ -13,7 +13,7 @@ import { JobService } from '../services/job.service';
 
 export class JobComponent implements OnInit {
 	jobs: Job[];
-	private isLoading = true;
+	public isLoading = true;
 
 	constructor (private jobService: JobService) {}
 
