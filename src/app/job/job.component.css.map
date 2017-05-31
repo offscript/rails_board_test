@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AACC,kCAAW;EACV,UAAU,EAAE,OAAO",
+"mappings": "AACC,kCAAW;EACV,UAAU,EAAE,OAAO;EACnB,OAAO,EAAE,GAAG;AACb,gCAAS;EACR,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,wBAAuB;EACnC,QAAQ,EAAE,KAAK;EACf,OAAO,EAAE,EAAE",
 "sources": ["job.component.sass"],
 "names": [],
 "file": "job.component.css"

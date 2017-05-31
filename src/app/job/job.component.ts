@@ -13,6 +13,7 @@ import { JobService } from '../services/job.service';
 
 export class JobComponent implements OnInit {
 	jobs: Job[];
+	private isLoading = true;
 
 	constructor (private jobService: JobService) {}
 
@@ -29,6 +30,7 @@ export class JobComponent implements OnInit {
                                     // Log errors if any
                                     console.log(err);
                                 });
+                           		this.isLoading = false;
                            		console.log(this.jobs);
 
 	}

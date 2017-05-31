@@ -1,4 +1,10 @@
 .col.s12.m10.offset-m1 .card-panel {
-  background: #fafafa; }
+  background: #fafafa;
+  z-index: 100; }
+.col.s12.m10.offset-m1 .progress {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  position: fixed;
+  z-index: -1; }
 
 /*# sourceMappingURL=job.component.css.map */

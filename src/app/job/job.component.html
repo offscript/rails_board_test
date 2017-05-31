@@ -8,4 +8,7 @@
 			<p>{{job.description}}</p>
 		</div>
 	</div>
+	<div *ngIf="isLoading" class="progress #ee6e73">
+		<div class="indeterminate #ee6e73"></div>
+	</div>
 </div>
