@@ -1,27 +1,48 @@
-<form #jobForm="ngForm">
-<div class="col l7 s12">
-	<h3>Add Job</h3>
-	<div class="row">
-		<div class="input-field col s6">
-			<input placeholder="Software Developer" id="title" type="text"
-       		[(ngModel)]="job.title" name="title">
-			<label class="active" for="title">Job Title</label>
+<form (ngSubmit)="sendJob()" #jobForm="ngForm">
+	<div class="col l7 s12">
+		<h3>Add Job</h3>
+		<div class="row">
+			<div class="input-field col s6">
+				<input placeholder="Software Developer" 
+				id="title" 
+				type="text"
+				name="title"
+				required 
+	       		[(ngModel)]="job.title"
+	       		class="validate">
+				<label class="active" for="title">Job Title</label>
+			</div>
+			<div class="input-field col s6">
+				<input placeholder="New York City, New York"
+				id="location" 
+				type="text"
+				required
+				[(ngModel)]="job.location" 
+				name="location"
+				class="validate">
+				<label class="active" for="location">Location</label>
+			</div>
 		</div>
-		<div class="input-field col s6">
-			<input placeholder="New York City, New York" id="location" type="text" [(ngModel)]="job.location" name="location">
-			<label class="active" for="location">Location</label>
+		<div class="row">
+			<div class="input-field col s12">
+				<textarea id="description" 
+				class="materialize-textarea" 
+				[(ngModel)]="job.description" 
+				name="description">
+				</textarea>
+				<label for="description">Description/Requirements</label>
+			</div>
+		</div>
+		<div class="row">
+			<button class="btn waves-effect waves-light"
+			type="submit" 
+			name="action"
+			required
+			[disabled]="!(jobForm.valid)" 
+	        [ngClass]="{'disabled': !(jobForm.valid)}">
+	        Submit
+			<i class="material-icons right">send</i>
+	  		</button>
 		</div>
 	</div>
-	<div class="row">
-		<div class="input-field col s12">
-			<textarea id="description" class="materialize-textarea" [(ngModel)]="job.description" name="description"></textarea>
-			<label for="description">Description/Requirements</label>
-		</div>
-	</div>
-	<div class="row">
-		<button class="btn waves-effect waves-light" type="submit" name="action" (click)="sendJob()">Submit
-		<i class="material-icons right">send</i>
-  		</button>
-	</div>
-</div>
 </form>
