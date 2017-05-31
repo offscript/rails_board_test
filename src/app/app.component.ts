@@ -11,6 +11,6 @@ import { environment } from "../environments/environment.prod"; //change back to
 export class AppComponent {
   title = 'app works!';
  constructor(public authToken: Angular2TokenService){
-    this.authToken.init();
+    this.authToken.init(environment.token_auth_config);
   }
 }
