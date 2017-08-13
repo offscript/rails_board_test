@@ -35,7 +35,7 @@
     "zone.js": "^0.8.4"
   },
   "engines": {
-    "node": "7.10.1",
+    "node": "8.2.1",
     "npm": "4.2.0"
   },
   "devDependencies": {
