@@ -1,6 +1,26 @@
+.row.frame {
+  background-image: url("../../assets/workspace.jpg");
+  height: 500px; }
+  .row.frame .col.s12.jumbo {
+    height: 66%; }
+  .row.frame .col.s4 {
+    text-align: center; }
+    .row.frame .col.s4 p {
+      color: white; }
+    .row.frame .col.s4 .large.material-icons {
+      color: #546e7a; }
+    .row.frame .col.s4 .hover:hover {
+      color: #fafafa; }
+
 .col.s12.m10.offset-m1 .card-panel {
   background: #fafafa;
-  z-index: 100; }
+  z-index: 100;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: inline-block;
+  height: 200px;
+  overflow: hidden; }
 .col.s12.m10.offset-m1 .progress {
   opacity: 0;
   transition: opacity 0.8s ease-in-out;

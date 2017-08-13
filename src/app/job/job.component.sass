@@ -1,11 +1,35 @@
+.row.frame
+	background-image: url('../../assets/workspace.jpg')
+	height: 500px
+
+	.col.s12.jumbo
+		height: 66%
+
+	.col.s4
+		text-align: center
+		p
+			color: white
+		.large.material-icons
+			color: #546e7a
+		.hover
+			&:hover
+				color: #fafafa
+		
+
 .col.s12.m10.offset-m1
 	.card-panel
 		background: #fafafa
 		z-index: 100
+		width: 40%
+		margin-left: 5%
+		margin-right: 5%
+		display: inline-block
+		height: 200px
+		overflow: hidden
+
 	.progress
 		opacity: 0
 		transition: opacity .8s ease-in-out
 		position: fixed
 		z-index: -1
-		
-	
+

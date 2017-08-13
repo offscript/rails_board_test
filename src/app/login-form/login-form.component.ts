@@ -21,8 +21,7 @@ export class LoginFormComponent implements OnInit {
   	ngOnInit() {}
 
   	onSignInSubmit(){
-
-    this.authService.logInUser(this.signInUser).subscribe(
+      this.authService.logInUser(this.signInUser).subscribe(
 
         res => {
           if(res.status == 200){
